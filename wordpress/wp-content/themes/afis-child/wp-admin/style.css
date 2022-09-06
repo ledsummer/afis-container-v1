@@ -1,0 +1,117 @@
+/************************************ Font Styles ******************************/
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,800');
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+/************************************ Main      display:none !important; ******************************/
+  body{
+     margin:0 !important;
+     padding:0 !important;
+     font-family:'Open Sans',FontAwesome;
+     -webkit-appearance:none;
+     font-size: 13px;
+}
+.column-actions .view,  #toplevel_page_preloader_plus_setting_page, #toplevel_page_loginwp-settings, #wpadminbar .ab-icon, #wp-admin-bar-new-content, #menu-pages, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon, .wp-admin-bar-arrow {
+    display: none !important;
+}
+#adminmenu div.wp-menu-name {
+    border-top: 1px solid #2c3554;
+}
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+    width: 250px;
+    margin-top: 16px;
+    background-color: #1a2344  !important;
+}
+#adminmenu .wp-submenu-head, #adminmenu a.menu-top {
+    font-size: 14px !important;
+}
+#wpadminbar {
+    background: #1a2344  !important;
+    /* height: 46px; */
+}
+#wpbody-content {
+    padding-bottom: 65px;
+    float: left;
+    /* padding-left: 47px; */
+    width: 100%;
+    overflow: visible;
+    padding-top: 0px;
+}
+#wpadminbar .quicklinks>ul>li>a {
+    padding: 0 8px 0 7px;
+    /* font-size: 17px; */
+    color: #ffff;
+    font-family:'Open Sans',san-serif;
+}
+#adminmenu .opensub .wp-submenu li.current a, #adminmenu .wp-submenu li.current, #adminmenu .wp-submenu li.current a, #adminmenu .wp-submenu li.current a:focus, #adminmenu .wp-submenu li.current a:hover, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a {
+    color: #fff;
+    background: #3858e9;
+}
+#wpcontent, #wpfooter {
+    margin-left: 252px;
+}
+#adminmenu .wp-submenu li {
+    border-bottom: 0px dotted #524c4c;
+}
+
+#adminmenu .wp-not-current-submenu .wp-submenu{
+    margin-left: 89px;
+}
+#dashboard-widgets .monsterinsights-upsell-overlay h3, .postbox .inside .monsterinsights-upsell-overlay h3, p{
+     font-family:'Open Sans',FontAwesome !important;
+}
+.monsterinsights-upsell-overlay, .non-active, #toplevel_page_monsterinsights_reports, #toplevel_page_all-in-one-seo-pack-aioseop_class, #toplevel_page_simple-sitemap-menu, #toplevel_page_edit-post_type-acf-field-group, #menu-tools, #menu-comments, #toplevel_page_redirect-404-error-page-to-homepage-or-custom-page, #toplevel_page_lscache-settings, #menu-posts-cookielawinfo, #menu-plugins, #menu-posts, #toplevel_page_newsletter_main_index,  #toplevel_page_to-top, #toplevel_page_custom-taxonomies-filters-columns, #toplevel_page_edit-post_type-search-filter-widget, #toplevel_page_wp-responsive-menu{
+   display:none !important;
+}
+ .dashadmin li {
+    padding: 9px;
+    background-color: #274f71;
+    border-bottom: 2px solid #182f42;
+    border-radius: 3px;
+    text-transform: UPPERCASE;
+}
+#adminmenu .wp-not-current-submenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu {
+    min-width: 219px ;
+    width: auto;
+}
+.disabled-edit input{
+    pointer-events:none;
+    border: 0px solid #fff;
+}
+.dashadmin .fas{
+    margin-top: 3px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+#adminmenu .wp-submenu a {
+    color: #b4b9be;
+    color: rgba(240,245,250,.7);
+    font-size: 14px !important;
+    line-height: 1.4;
+    margin: 0;
+    padding: 5px 0;
+}
+.dashadmin li:hover{
+    padding: 9px;
+    background-color: #aa342e;
+    border-bottom: 2px solid #aa342e;
+    border-radius: 3px;
+    text-transform: UPPERCASE;
+    transition: 0.4s;
+}
+.hidden{
+    display:none;
+}
+.dashadmin li a{
+   color:#fff;
+   display: flex;
+}
+/* CTFC Custom Filter Plugin */
+#posts-filter select#author {
+display: none;
+}
+#toplevel_page_edit-post_type-acf-field-group,#menu-settings,#toplevel_page_to-top,#toplevel_page_wpseo_dashboard,#toplevel_page_cptui_main_menu,#toplevel_page_responsive-menu,#menu-tools{
+    display:none !important;
+}
+ 
+ 

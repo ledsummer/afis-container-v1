@@ -1,0 +1,354 @@
+/* Theme Name:  CDA AFIS Theme
+ * Description: afis-child 
+ * Template:    afis
+ * Author:      Franz Daryl Duetes | www.mybusybee.net
+ * Text Domain: afis-child 
+ * */
+
+
+/************************************ Parent Theme ******************************/
+
+@import url("../afis/style.css");
+@import url("nprogress.css");
+
+/************************************ My  Responsive Core ******************************/
+
+@import url("responsive-css/style.css");
+
+/************************************ Font Styles ******************************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Solway:400,500,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap');
+
+/************************************ Main ******************************/
+
+ html {
+     margin-top: 0px !important;
+}
+ .site-main {
+     position: relative;
+     margin-bottom: 20px;
+     margin-top: 78px;
+}
+ html {
+     --scrollbarBG: #fafafa;
+     --thumbBG: #90A4AE;
+}
+ body {
+     margin: 0 !important;
+     padding: 0 !important;
+     font-family: 'Open Sans', arial, sans-serif, FontAwesome;
+     -webkit-appearance: none;
+     font-size: 14px;
+     line-height: 1.6;
+     color: #626567;
+     font-weight: 500;
+     -moz-webkit-appearance: none;
+     background: #ffffff;
+     background-image: url("images/bg.png");
+     background-repeat: repeat;
+}
+ .flex {
+     display: flex;
+}
+ h1, h2, h3, h4, h5 {
+     font-family: Open Sans, sans-serif;
+     letter-spacing: -0.7px;
+}
+ h1 {
+     font-size: 38px;
+     margin: 33px 0;
+     font-weight: normal;
+}
+ p {
+     margin: 0 0 14px !important;
+}
+ a {
+     color: #8484ca;
+     text-decoration: none !important;
+}
+ .login {
+     text-align: right;
+     margin-top: 21px;
+}
+ .login a {
+    /* margin-top: 14px;
+     */
+     background: #6060b9;
+     padding: 10px 35px 10px 35px;
+     color: #fff;
+     border-radius: 3px;
+     text-transform: UPPERCASE;
+}
+ .regbutton {
+     background: #4054b2;
+     background: -webkit-linear-gradient(top, #4054b2 0%, #4054b2 100%) !important;
+     background: linear-gradient(to bottom, #4054b2 0%, #4054b2 100%) !important;
+     border: none;
+     border-bottom: 3px solid #4054b2 !important;
+     border-radius: 2px;
+     color: #fff;
+     display: inline-block;
+     padding: 11px 24px 10px;
+     text-decoration: none;
+}
+ .review .acf-button {
+}
+ .acf-fields>.acf-field {
+     position: relative;
+     margin: 0;
+     padding: 12px 8px !important;
+     border-top: #EEEEEE solid 0px !important;
+}
+ .acf-form-submit {
+     margin-right: 13px;
+     position: relative;
+     float: right;
+     margin-top: -32px;
+}
+ .standardCenter-registration {
+     margin: 0 auto;
+     width: 50%;
+}
+ .cea-registration {
+    /* border: 1px solid #baaeae;
+     */
+     padding: 10px 0px 49px;
+     margin-top: 20px;
+     box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+     margin-bottom: 65px;
+     background: #fff;
+}
+ .cea-registration h1 {
+     font-size: 30px;
+     margin: 33px 0;
+     font-weight: normal;
+     color: #4e4e5a;
+     text-align: center;
+     font-family: 'Roboto';
+}
+ #acf-field_61c96c606b2b0, .acf-field input[type="text"], .acf-field input[type="password"], .acf-field input[type="date"], .acf-field input[type="datetime"], .acf-field input[type="datetime-local"], .acf-field input[type="email"], .acf-field input[type="month"], .acf-field input[type="number"], .acf-field input[type="search"], .acf-field input[type="tel"], .acf-field input[type="time"], .acf-field input[type="url"], .acf-field input[type="week"], .acf-field textarea, .acf-field select {
+     width: 100%;
+     padding: 9px 10px !important;
+     margin: 0;
+     box-sizing: border-box;
+     font-size: 14px;
+     line-height: 1.4;
+     border: 1px solid #98b7b8;
+     font-family: 'Open Sans', arial, sans-serif, FontAwesome;
+     border-radius: 3px;
+     background: #eee;
+}
+ .review label {
+     color: #babee4;
+}
+ .review #acf-field_61c96c606b2b0, .review .acf-field input[type="text"], .review .acf-field input[type="password"], .review .acf-field input[type="date"], .review .acf-field input[type="datetime"], .review .acf-field input[type="datetime-local"], .review .acf-field input[type="email"], .review .acf-field input[type="month"], .review .acf-field input[type="number"], .review .acf-field input[type="search"], .review .acf-field input[type="tel"], .review .acf-field input[type="time"], .review .acf-field input[type="url"], .review .acf-field input[type="week"], .review .acf-field textarea, .review .acf-field select {
+     width: 100%;
+     padding: 9px 10px !important;
+     margin: 0;
+     box-sizing: border-box;
+     font-size: 14px;
+     line-height: 1.4;
+     border: 0px solid #fff !important;
+     font-family: 'Open Sans', arial, sans-serif, FontAwesome;
+     border-radius: 3px;
+     background: #fff !important;
+     color: #1e1c1a;
+     font-weight: 800;
+     pointer-events: none;
+}
+.btn-register{
+    font-family: poppins,sans-serif;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-decoration: none;
+    outline: none;
+    padding: 12px 18px;
+    position: relative;
+    text-transform: uppercase;
+    background: #2250fc !important;
+    border-color: #2250fc;
+    border-width: 1px;
+    border-style: solid;
+    color: #fff;
+    transition: all .3s;
+    margin-bottom: 6px;
+    outline: none;
+    line-height: 14px;
+    cursor: pointer;
+}
+ .btn-download button, input[type="submit"], input[type="button"], input[type="reset"] {
+     background: linear-gradient(to bottom, #8c9add 0%, #4054b2 100%)!important;
+     border: none;
+     border-bottom: 3px solid #4054b2 !important;
+     padding: 12px 17px 10px;
+     text-transform: UPPERCASE;
+     font-size: 16px;
+     font-family: 'Montserrat';
+}
+ .btn-download button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
+     background: linear-gradient(to bottom, #9daaea 0%, #abb7ef 100%)!important;
+     border: none;
+     border-bottom: 3px solid #a9b6ee !important;
+     transition: 0.4s;
+}
+ .mainNavigation {
+     background: #3B5998;
+     justify-content: space-between;
+     border-radius: 5px;
+}
+ .headerTop {
+     background: #fdfdfd;
+     position: relative;
+     width: 100%;
+     box-shadow: -2px 1px #0000001c;
+     top: 0;
+     z-index: 99999999;
+}
+ .logo {
+     position: relative;
+     margin-bottom: -28px;
+     width: 100px;
+}
+ .headerTop ul {
+     margin: -5px 0px !important;
+     padding: 0px;
+}
+ .headerTop ul>li {
+     display: inline-block;
+     padding: 28px 20px;
+     border-right: 1px solid #f1efef;
+}
+ .headerTop ul>li>a {
+     text-transform: UPPERCASE;
+     font-weight: 600;
+     color: #575151;
+     text-decoration: none;
+     font-size: 13px;
+     letter-spacing: 0px;
+     display: flex;
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+}
+ .headerTop li:hover {
+     color: #8297e4;
+}
+ .headerTop ul>li>a:hover {
+     color: darkblue 
+}
+ .home .mainNavigation {
+     border-radius: 5px;
+}
+ .homewrapper {
+     text-align: center;
+     background: #1b1d42;
+     color: #fff;
+     height: 400px;
+     font-size: 17px;
+     font-family: Poppins;
+}
+ .homewrapper h2 {
+     font-family: Poppins;
+}
+ .homewrapper h3 {
+     font-size: 17px;
+     font-family: 'Poppins';
+     letter-spacing: 0px;
+     font-weight: 300;
+}
+ .bannerWrapper {
+     padding: 104px 0px 20px 0px;
+     font-size: 17px;
+     font-family: 'Poppins';
+     letter-spacing: 0px;
+     font-weight: 300;
+}
+ #menu-item-155 a {
+     font-size: 17px;
+}
+ .mainNavigation ul {
+     margin: 0 !important;
+     padding: 0px 0px !important;
+     display: inherit;
+}
+ .mainNavigation ul>li {
+     display: inline-block;
+     margin-left: 0px;
+}
+ #menu-item-155 {
+     border-left: 1px solid #f1efef;
+}
+ .mainNavigation ul>li>a {
+     text-transform: UPPERCASE;
+     font-weight: 600;
+     color: #eae3e3;
+     font-size: 14px;
+     text-decoration: none;
+     padding: 15px 27px;
+     font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+     letter-spacing: -0.3px;
+}
+ .mainNavigation .current_page_item>a, .mainNavigation .current_page_ancestor>a, .mainNavigation .current-menu-item>a, .mainNavigation .current-menu-ancestor>a {
+     color: #f5f3f3;
+     font-style: normal !important;
+}
+ .mainNavigation .nav-menu li:hover>a, .mainNavigation .nav-menu li a:hover, .mainNavigation .nav-menu li:focus>a, .mainNavigation .nav-menu li a:focus {
+     background-color: #243f77;
+     color: #fff;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     display: block;
+     width: 100%;
+}
+ .mainNavigation .sub-menu li a {
+     padding: 14px 17px 18px 22px !important;
+     width: 100%;
+}
+ .mainNavigation .sub-menu {
+     width: 220px !important;
+}
+ .mainNavigation .sub-menu li {
+     display: block;
+}
+ .widget .widget-title {
+     font-family: 'Open Sans';
+     font-style: normal;
+}
+ .frontendhidden {
+     display: none;
+}
+ .company-title {
+     font-size: 22px;
+}
+ .footer-content {
+     padding: 45px 0px 30px 0px;
+}
+ #footer {
+     display: block;
+     position: absolute;
+     background-color: rgb(47 57 99);
+     font-size: 14px;
+     line-height: 32px;
+     font-weight: 500;
+     font-family: 'Roboto';
+     color: #fff;
+     width: 100%;
+     bottom: 0;
+}
+ #footer .copyright-content {
+     min-height: 37px;
+     padding: 10px 0;
+     background-color: #252b47;
+     font-size: 13px;
+}
+ .copyright-content {
+     text-align: center;
+}
+ 

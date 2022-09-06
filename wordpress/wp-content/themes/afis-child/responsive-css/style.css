@@ -1,0 +1,569 @@
+/* Supported CSS Name:  FranzDuetes Standard Float Grid Cass Cading Stylesheet
+ * Description: Easy to responsive, float css
+ * Template:    Franz Float CSS
+ * Author:      Franz Daryl Duetes | www.mybusybee.net
+ * Text Domain: www.franzduetes.com
+ * */
+
+
+@media only screen and (max-width: 8000px) {
+    body {
+    margin: 0;
+    padding: 0;
+}
+.standardCenter {
+    margin: 0 auto;
+    padding-left:10%;
+    padding-right:10%;
+}
+.margin-right{
+    margin-right: 20px;
+}
+.margin-right-40{
+    margin-right:30px;
+}
+.margin-left{
+    margin-left: 32px;
+}
+.margin-top{
+    margin-top:10px;
+}
+.margin-bottom{
+    margin-bottom:10px;
+}
+.container {
+    width: 100%;
+}
+.clear {
+    clear: both;
+    margin: 0;
+}
+.col-mid-95 {
+    float: left;
+    width: 95%;
+}
+.col-mid-90 {
+    float: left;
+    width: 90%;
+}
+.col-mid-85 {
+    float: left;
+    width: 85%;
+}
+.col-mid-80 {
+    float: left;
+    width: 80%;
+}
+.col-mid-75 {
+    float: left;
+    width: 75%;
+}
+.col-mid-70 {
+    float: left;
+    width: 70%;
+}
+.col-mid-65 {
+    float: left;
+    width: 65%;
+}
+.col-mid-60 {
+    float: left;
+    width: 60%;
+}
+.col-mid-50 {
+    float: left;
+    width: 50%;
+}
+.col-mid-45 {
+    float: left;
+    width: 45%;
+}
+.col-mid-40 {
+    float: left;
+    width: 40%;
+}
+.col-mid-35 {
+    float: left;
+    width: 35%;
+}
+.col-mid-30 {
+    float: left;
+    width: 30%;
+}
+.col-mid-25 {
+    float: left;
+    width: 25%;
+}
+.col-mid-20 {
+    float: left;
+    width: 20%
+}
+.col-mid-10 {
+    float: left;
+    width: 10%
+}
+.col-mid-16{
+    float:left;
+    width:16.66%;
+}
+/**Three COlumns**/
+
+.col-mid-33 {
+    float: left;
+    width: 33.33%;
+}
+
+} 
+@media only screen and (max-width: 1920px) {
+ .standardCenter {
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    
+}
+@media only screen and (max-width: 1366px) {
+    
+    body {
+    margin: 0;
+    padding: 0;
+}
+.standardCenter {
+    margin: 0 auto;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.container {
+    width: 100%;
+}
+.clear {
+    clear: both;
+    margin: 0;
+}
+.col-mid-95 {
+    float: left;
+    width: 95%;
+}
+.col-mid-90 {
+    float: left;
+    width: 90%;
+}
+.col-mid-85 {
+    float: left;
+    width: 85%;
+}
+.col-mid-80 {
+    float: left;
+    width: 80%;
+}
+.col-mid-75 {
+    float: left;
+    width: 75%;
+}
+.col-mid-70 {
+    float: left;
+    width: 70%;
+}
+.col-mid-65 {
+    float: left;
+    width: 65%;
+}
+.col-mid-60 {
+    float: left;
+    width: 60%;
+}
+.col-mid-50 {
+    float: left;
+    width: 50%;
+}
+.col-mid-45 {
+    float: left;
+    width: 45%;
+}
+.col-mid-40 {
+    float: left;
+    width: 40%;
+}
+.col-mid-35 {
+    float: left;
+    width: 35%;
+}
+.col-mid-30 {
+    float: left;
+    width: 30%;
+}
+.col-mid-25 {
+    float: left;
+    width: 25%;
+}
+.col-mid-20 {
+    float: left;
+    width: 20%
+}
+.col-mid-10 {
+    float: left;
+    width: 10%;
+}
+.col-mid-16{
+    float:left;
+    width:16.66%;
+}
+/**Three COlumns**/
+
+.col-mid-33 {
+    float: left;
+    width: 33.33%;
+}
+
+} 
+/********************************PORTRAIT************************************/
+
+/** iPad portrait width: 768px **/
+@media only screen and (max-width: 768px) {
+.standardCenter {
+margin: 0 auto;
+padding-left:2%;
+padding-right:2%; 
+}
+     .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+    .col-mid-20,
+    .col-mid-10
+    {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-33 {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+/**iPhone 6-8 portrait width: 375px**/
+@media only screen and (max-width: 375px) {
+    .standardCenter {
+    margin: 0 auto;
+     width: 99%;
+   }
+    .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+    .col-mid-10
+    {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-33 {
+        float: none;
+        width: 100%;
+    }
+
+    .col-mid-16{
+    float:left;
+     width: 100%;
+     }
+
+}
+
+
+/**iPhone 6-8 Plump portrait  width: 414px**/
+@media only screen and (max-width: 414px) {
+    .standardCenter {
+    margin: 0 auto;
+    width: 95%;
+   }
+    .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+    .col-mid-10
+    {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-33 {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-16{
+    float:left;
+     width: 100%;
+     }
+}
+
+
+
+
+/**Android (Nexus 4) portrait width: 384px**/
+@media only screen and (max-device-width: 384px) {
+    .standardCenter {
+    margin: 0 auto;
+    width: 95%;
+   }
+    .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+    .col-mid-10
+    {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-33 {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-16{
+    float:left;
+     width: 100%;
+     }
+}
+
+
+
+/********************************LANDSCAPE************************************/
+
+
+
+/**iPhone 6-8 landscape width: 667px**/
+@media only screen and (max-width: 667px) {
+    .standardCenter {
+    margin: 0 auto;
+    /* width: 95%; */
+    padding-left: 3%;
+    padding-right: 3%;
+   }
+    .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+    .col-mid-10
+    {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-33 {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-16{
+    float:left;
+     width: 100%;
+     }
+}
+
+
+/**iPhone eXpensive landscape  width: 734px**/
+@media only screen and (max-width: 734px) {
+  .standardCenter {
+    margin: 0 auto;
+    padding-left: 0%;
+    padding-right: 0%;
+   }
+    .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+   .col-mid-10
+    {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-33 {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+
+/**iPad landscape  width: 1024px**/
+@media only screen and (max-width: 1024px) {
+ .standardCenter {
+    margin: 0 auto;
+    width: 97%;
+   }
+    .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+    .col-mid-20,
+    .col-mid-10
+    {
+        
+    }
+    .col-mid-33 {
+        
+    }
+    .col-mid-16{
+    float:left;
+     width: 100%;
+     }
+ }
+
+
+/**iPhone 6-8 Plump landscape width: 736px**/
+@media only screen and (max-device-width: 736px) {
+  .standardCenter {
+    margin: 0 auto;
+    width: 97%;
+   }
+    .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+    .col-mid-20
+    {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-33{
+        float: none;
+        width: 100%;
+    }
+    .col-mid-16{
+    float:left;
+     width: 100%;
+     }
+}
+
+
+
+/**Android (Nexus 4) landscape width: 600px**/
+@media only screen and (max-device-width: 600px) {
+
+   .standardCenter {
+    margin: 0 auto;
+    width: 97%;
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+ }
+    .col-mid-95,
+    .col-mid-90,
+    .col-mid-85,
+    .col-mid-80,
+    .col-mid-75,
+    .col-mid-70,
+    .col-mid-65,
+    .col-mid-60,
+    .col-mid-55,
+    .col-mid-50,
+    .col-mid-45,
+    .col-mid-40,
+    .col-mid-35,
+    .col-mid-30,
+    .col-mid-25,
+    .col-mid-20
+    {
+        float: none;
+        width: 100%;
+    }
+    .col-mid-33{
+        float: none;
+        width: 100%;
+    }
+    .col-mid-16{
+    float:left;
+     width: 100%;
+     }
+}
+@media only screen and (max-device-width: 1496px) {
+.standardCenter {
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+}

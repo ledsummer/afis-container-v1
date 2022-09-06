@@ -1,0 +1,332 @@
+<?php
+/* Template Name: Accreditation - Review Information */
+get_header();
+acf_form_head();
+?>
+<?php include ("account-header.php"); ?>
+<?php include ("account-accreditation.php"); ?>
+<div class="container">
+
+<div class="col-mid-15">
+        <?php include ("account-sidebar.php"); ?>
+ </div>
+ 
+<?php
+$current_user = wp_get_current_user();
+$email = $current_user->user_email;
+
+$returnedID;
+$posts = get_posts(array(
+    'numberposts' => 1,
+    'post_type' => array(
+        'cea',
+        'ctpro'
+    ) ,
+    'post_status' => array(
+        'publish'
+    ) ,
+    'meta_query' => array(
+        'relation' => 'AND',
+        array(
+            'key' => 'email',
+            'value' => $email,
+            'compare' => '=',
+        )
+    )
+));
+if (have_posts()):
+    while (have_posts()):
+        the_post();
+        $returnedID = get_the_id();
+    endwhile;
+endif;
+?> 
+
+        
+<div class="col-mid-85"  id="main-content">
+    <div class="standardCenter">
+   
+        <center><h3>Apply for Accreditation</h3></center>
+        <br><br><br>
+        <div>
+            <?php if(get_field('application', $returnedID) == 1){ ?>
+                <div class="stepper-wrapper  ">
+                    <div class="stepper-item completed active">
+                        <div class="step-counter">1</div>
+                        <div class="step-name">Review Information</div>
+                    </div>
+                    
+                    <div class="stepper-item ">
+                        <div class="step-counter">2</div>
+                        <div class="step-name">CRITS For Review</div>
+                    </div>
+                    
+                    <div class="stepper-item ">
+                        <div class="step-counter">3</div>
+                        <div class="step-name">CRITD For Review</div>
+                    </div>
+                    
+                    <div class="stepper-item ">
+                        <div class="step-counter">4</div>
+                        <div class="step-name">Approved</div>
+                    </div>
+                </div>
+            <?php } else if(get_field('application', $returnedID) == 2) { ?>
+                <div class="stepper-wrapper  ">
+                    <div class="stepper-item completed active">
+                        <div class="step-counter">1</div>
+                        <div class="step-name">Review Information</div>
+                    </div>
+                    
+                    <div class="stepper-item   ">
+                        <div class="step-counter">2</div>
+                        <div class="step-name" style="text-align: center;">Review Training Report <br>and Documentary Requirements</div>
+                    </div>
+                    
+                    <div class="stepper-item ">
+                        <div class="step-counter">3</div>
+                        <div class="step-name">CRITS For Review</div>
+                    </div>
+                    
+                    <div class="stepper-item ">
+                        <div class="step-counter">4</div>
+                        <div class="step-name">CRITD For Review</div>
+                    </div>
+                    
+                    <div class="stepper-item ">
+                        <div class="step-counter">5</div>
+                        <div class="step-name">Approved</div>
+                    </div>
+                </div>
+            <?php } ?>
+        <?php
+$current_user = wp_get_current_user();
+$email = $current_user->user_email;
+
+$posts = get_posts(array(
+    'numberposts' => 1,
+    'post_type' => array(
+        'cea',
+        'ctpro'
+    ) ,
+    'post_status' => array(
+        'publish'
+    ) ,
+    'meta_query' => array(
+        'relation' => 'AND',
+        array(
+            'key' => 'email',
+            'value' => $email,
+            'compare' => '=',
+        )
+    )
+));
+if (have_posts()):
+    while (have_posts()):
+        the_post();
+        $cpost = get_the_ID();
+        $profile = get_field('profile_image');
+        if (empty($profile))
+        {
+            $profilepicture = "http://afis.beecr8tive.net/wp-content/uploads/2021/12/no-img.png";
+        }
+        else
+        {
+            $profilepicture = get_field('profile_image');
+        }
+?>
+             <?php $payment = get_field('payment_status');
+        if ($payment == "Pending" || empty($payment))
+        {
+            echo "<div class='info-alert'><i class=\"fas fa-exclamation-circle\"></i> To approved your accreditation, please settle your pending balance.</div>";
+        }
+?>
+      
+           <div class="account-information">
+           <div class="headerAccount"><i class="fas fa-file-alt"></i> Account Information</div>
+          
+            <div class="label-information">CA No:</div> <div class="data-information"><?php echo get_field('ca-no'); ?></div>
+            <div class="clear"></div>
+            
+                  
+                 
+            <div class="headerAccount"><i class="fas fa-file-alt"></i> Payment Status</div>
+            <div class="label-information">Status:</div> <div class="data-information">
+                <?php $payment = get_field('payment_status');
+        if ($payment == "Pending" || empty($payment))
+        {
+            echo "<span style='color:red;'>Pending</span>";
+        }
+        else
+        {
+            echo "<span style='color:green;'>Paid</span>";
+        } ?></div>
+                
+          
+           
+            <div class="headerAccount"><i class="fas fa-file-alt"></i> Account Type</div>
+            <div class="label-information">
+				Application:
+			</div>
+
+
+			<div class="data-information">
+				<?php
+                if(get_field('application') == 1){
+                    echo "New";
+                } else if(get_field('application') == 2) {
+                    echo "Renewal";
+                }
+                ?>
+			</div>
+
+
+			<div class="clear">
+			</div>
+            <div class="label-information">Type:</div> <div class="data-information"><?php echo get_field('type_of_cea'); ?></div>
+            <div class="clear"></div>
+            
+            <?php if(get_post_type($returnedID) == "cea"){ ?>
+            <div class="label-information">PRC ID No.:</div> <div class="data-information"><?php echo  get_field('prc_id_no' ); ?></div>
+            <div class="clear"></div>
+            
+            <div class="label-information">PRC BOA Accreditation No.:</div> <div class="data-information"><?php echo  get_field('prc_boa_accreditation_no_' ); ?></div>
+            <div class="clear"></div>
+            <?php } ?>
+            
+            <div class="headerAccount"><i class="fas fa-file-alt"></i> Application Information</div>
+            <div class="label-information">First Name:</div> <div class="data-information"><?php echo get_field('first_name'); ?></div>
+            <div class="clear"></div>
+            
+            <div class="label-information">Middle Name:</div> <div class="data-information"><?php echo get_field('middle_name'); ?></div>
+            <div class="clear"></div>
+            
+            <div class="label-information">Last Name:</div> <div class="data-information"><?php echo get_field('last_name'); ?></div>
+            <div class="clear"></div>
+            
+            <div class="label-information">Address:</div> <div class="data-information"><?php echo get_field('address'); ?></div>
+            <div class="clear"></div>
+            
+            <div class="label-information">City/Municipality :</div> <div class="data-information"><?php echo get_field('city'); ?></div>
+            <div class="clear"></div>
+            
+            
+            <div class="label-information">Province:</div> <div class="data-information"><?php echo get_field('province'); ?></div>
+            <div class="clear"></div>
+            
+            
+            <div class="label-information">Zip:</div> <div class="data-information"><?php echo get_field('zip_code'); ?></div>
+            <div class="clear"></div>
+            
+            <div class="headerAccount"><i class="fas fa-file-alt"></i> Contact Information</div>
+            
+             <div class="label-information">Email:</div> <div class="data-information"><?php echo get_field('email'); ?></div>
+            <div class="clear"></div>  
+            
+             <div class="label-information">Telephone:</div> <div class="data-information"><?php echo get_field('telephone'); ?></div>
+            <div class="clear"></div>  
+            
+             <div class="label-information">Mobile:</div> <div class="data-information"><?php echo get_field('cellphone'); ?></div>
+            <div class="clear"></div>  
+            
+            <div class="headerAccount"><i class="fas fa-file-alt"></i> Terms and Conditions</div>
+            
+            <div class="label-information">
+                <input type="checkbox" id="termsC" name="termsC">
+                <label for="termsC"> I accept the <a href="#termsAndConditions-<?php echo $cpost; ?>" class="fancybox-inline" style="color:inherit;"><u>Terms and Conditions</u></a></label>
+            </div>
+            <div class="clear"></div>  
+            
+            <div style="display:none" class="fancybox-hidden">
+                <div id="termsAndConditions-<?php echo $cpost; ?>" style="line-height:1.3; font-size:13px; width:560px; max-width:100%;">
+                    <h5>Terms and Conditions</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            
+    <?php
+    endwhile;
+endif;
+?> 
+            <?php if(get_field('application') == "1"){ ?>
+                <?php
+                $cpost = get_the_ID();
+                $token = get_field('confirmation_key');
+                $name = get_field('first_name') . " " . get_field('middle_name') . " " . get_field('last_name');
+                $payment = get_field('payment_status');
+                if ($payment == "Pending" || empty($payment)){
+                    //echo "<div class='info-alert'><i class=\"fas fa-exclamation-circle\"></i> To approved your accreditation, please settle your pending balance.</div>";
+                }
+                acf_form(array(
+                    'post_id' => 'new_post',
+                    'field_groups' => array(
+                        'group_61d2b56290f34', // Accreditation Request
+                        'group_61d2b9c28ee70', // Approval Status (SED Division)
+                        'group_61d2b97793359', // Approval Status (SES Division)
+                        'group_61de88f5cf877' // Accreditation Email Status
+                    ) ,
+                    'new_post' => array(
+        
+                        'post_title' => $token,
+                        'post_type' => 'accreditations',
+                        'post_status' => 'publish',
+        
+                    ) ,
+                    'updated_message' => __("", 'acf') ,
+                    'submit_value' => __('Submit Application', acf) ,
+                    'return' => "/review-ses-division/?success=true",
+                ));
+                ?>
+                <div class="clear"></div>
+                <script>
+                    document.getElementById("acf-field_61d2b578b2f91").value = "<?php echo $name; ?>";
+                    document.getElementById("acf-field_61d2b571b2f90").value = "<?php echo get_field('ca-no'); ?>";
+                    document.getElementById("acf-field_61de81b8c5a34").value = "<?php echo get_field('region'); ?>";
+                    document.getElementById("acf-field_61dfd65bdda24").value = "<?php echo get_field('delegates_id'); ?>";
+                    document.getElementById("acf-field_61f34414586d9").value = "<?php echo get_field('application'); ?>";
+                    document.getElementById("acf-field_61d2b59ab2f93").value = "<?php echo $cpost; ?>";
+                </script>
+            <?php } else if(get_field('application') == "2") { ?>
+                <style>
+                    .nextbtn a.disabled {
+                        pointer-events: none;
+                        cursor: default;
+                    }
+                    .nextbtn a button {
+                        -webkit-transition: all 0.35s ease;
+                        -moz-transition: all 0.35s ease;
+                        -o-transition: all 0.35s ease;
+                        transition: all 0.35s ease;
+                    }
+                    .nextbtn a.disabled button {
+                        background: #535760;
+                        -webkit-transition: all 0.35s ease;
+                        -moz-transition: all 0.35s ease;
+                        -o-transition: all 0.35s ease;
+                        transition: all 0.35s ease;
+                    }
+                </style>
+                <div class="nextbtn"><a class="disabled" href="review-training-reports/"><button>Next</button></a></div>
+                <script>
+                    $(document).ready(function(){
+                        $('#termsC').click(function(){
+                            if($(this).prop("checked") == true){
+                                $( ".nextbtn a" ).removeClass( "disabled" );
+                            }
+                            else if($(this).prop("checked") == false){
+                                $( ".nextbtn a" ).addClass( "disabled" );
+                            }
+                        });
+                    });
+                </script>
+            <?php } ?>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+<div class="clear"></div>
+
+<?php get_footer(); ?>

@@ -1,0 +1,58 @@
+ body {
+	background: #f4f4f6;
+}
+#login {
+	width: 100%;
+	padding-top: 0;
+}
+.login h1 a {
+    background-image: url(../images/logo-menu.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 160px;
+    padding: 12px 0;
+    background-position: center center;
+    width: 10%;
+    background-size: contain;
+}
+#login_error,
+#login form,
+#login p {
+	width: 320px;
+	margin: 0 auto !important;
+	background: none;
+	box-shadow: none;
+}
+#login h1 {
+	background: #fff;
+	border-bottom: 1px solid #e3e4e8;
+	margin-bottom: 40px;
+	/* width: 200px; */
+}
+.login * {
+    margin: 0;
+    padding: 0;
+}
+.login form .input, .login form input[type=checkbox], .login input[type=text] {
+	background: #fbfbfb;
+    box-shadow: none;
+    background-color: #fff;
+}
+.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+	background-color: #0d3daa;
+	border: none;
+	box-shadow: none;
+	height: 43px;
+	padding: 0 46px;
+	font-weight: bold;
+}
+.wp-core-ui .button-group.button-large .button:hover,
+.wp-core-ui .button.button-large:hover {
+	background: #345db5;
+}
+#login a:hover {
+	color: #148c9d;
+}
+.interim-login #login h1 {
+	display: none;
+}

@@ -1,0 +1,112 @@
+/**
+ * Print Stylesheet fuer Deinewebsite.de
+* @version         1.0
+* @lastmodified    16.06.2016
+*/
+
+@page { size: A4;
+  margin: 0; }
+
+@media print {
+
+    #content, #page {
+        width: 100%; 
+        margin: 0; 
+        float: none;
+    }
+    
+    body {
+        font: 13pt Georgia, "Times New Roman", Times, serif;
+        line-height: 1.3;
+        background: #fff !important;
+        color: #000;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2, h3, h4 {
+        font-size: 14pt;
+        margin-top: 25px;
+    }
+    
+    a {
+        page-break-inside:avoid
+    }
+    
+    blockquote {
+        page-break-inside: avoid;
+    }
+    
+    h1, h2, h3, h4, h5, h6 { 
+        page-break-after:avoid; 
+        page-break-inside:avoid;
+    }
+    
+    img { 
+        page-break-inside:avoid; 
+        page-break-after:avoid;
+    }
+    
+    table, pre { page-break-inside:avoid }
+    ul, ol, dl  { page-break-before:avoid }
+
+    a {
+        page-break-inside:avoid
+    }
+
+    a[href^=http]:after {
+        content:" <" attr(href) "> ";
+    }
+
+    a:after > img {
+       content: "";
+    }
+
+    article a[href^="#"]:after {
+       content: "";
+    }
+
+    a:not(:local-link):after {
+       content:" <" attr(href) "> ";
+    }
+  
+    .headerWrapper, .resp-navigation, .navWrapper, .footWrapper, .footerWrapper, .foot-copyright,
+    .banner, .accout-container h1, .account-nav, .printit, .account-evaluation-form legend,
+    #accountHeadTop, #mySidebar, #main-content-header, #to_top_scrollup, .copyright-content
+    {
+        display: none!important;
+    }
+    
+    .account-information {
+        padding: 0!important;
+        border: none!important;
+    }
+    
+    #printversion {
+        width: 96%!important;
+        text-align: center!important;
+        margin: 0 auto!important;
+    }
+    #printversion .print-name {
+        color: #000!important;
+        font-weight: 700!important;
+        font-size: 30px!important;
+        font-style: normal!important;
+        text-transform: uppercase!important;
+    }
+    .account-information #printversion .print-no {
+        color: #000!important;
+        font-weight: 700!important;
+        font-size: 12px!important;
+        font-style: normal!important;
+        text-transform: uppercase!important;
+        
+        right:3%!important;
+    }
+    .account-information #printversion .print-validFrom,
+    .account-information #printversion .print-validTo {
+        font-size: 14px;
+    }
+}
